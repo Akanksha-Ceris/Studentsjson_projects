@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz  
 import json
 import re
 
@@ -6,7 +6,7 @@ import re
 doc = fitz.open("json pdf.pdf")
 text = ""
 
-# Extract text from all pages
+
 for page in doc:
     text += page.get_text()
 
